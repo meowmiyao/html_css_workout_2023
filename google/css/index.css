@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+div .right .word {
+  display: flex;
+  line-height: 24px;
+  align-items: center;
+}
+div .right .wrapper {
+  display: flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: unset;
+  padding-right: 15px;
+}
+img {
+  width: 40px;
+  border-radius: 50%;
+}
+a:hover {
+  text-decoration: underline;
+}
+img .profile {
+  display: flex;
+}
+img .menu-icon:hover {
+  background-color: red;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+}
