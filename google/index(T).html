@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fake Google</title>
     <link rel="stylesheet" href="./css/index(T).css" />
   </head>
-  <body>
+  <body onload='document.getElementById("input-search").focus()'>
+    <!--여기에 둬도 되고, 맨 아래에 onload빼고 document부터해서 넣어도 됨-->
     <div id="root">
       <header id="header">
         <div class="left">
@@ -25,7 +26,9 @@
               <li><a>Images</a></li>
               <li>
                 <a class="btn-menu"
-                  ><img class="img-menu" src="/img/pngwing.com.png"
+                  ><img
+                    class="img-menu"
+                    src="/html_css_workout_2023/img/pngwing.com.png"
                 /></a>
               </li>
               <li>
@@ -44,6 +47,31 @@
               src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
             />
           </a>
+        </div>
+        <div id="search">
+          <form class="form-search">
+            <div class="main-left">
+              <img src="/html_css_workout_2023/img/magnifing-glass.png" />
+            </div>
+            <input id="input-search" />
+            <div class="main-right">
+              <div id="img-keyboard">
+                <img
+                  src="https://kr.seaicons.com/wp-content/uploads/2015/11/Computer-Hardware-Keyboard-icon.png"
+                />
+              </div>
+              <div id="img-mic">
+                <img src="/html_css_workout_2023/img/mic.png" />
+              </div>
+              <div id="img-lens">
+                <img src="/html_css_workout_2023/img/Google_Lens.png" />
+              </div>
+            </div>
+          </form>
+          <div class="main-button">
+            <button>Google 검색</button>
+            <button>I'm Feeling Lucky</button>
+          </div>
         </div>
       </main>
 
@@ -64,5 +92,7 @@
         </div>
       </footer>
     </div>
+
+    <script></script>
   </body>
 </html>

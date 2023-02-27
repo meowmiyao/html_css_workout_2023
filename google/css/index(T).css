@@ -22,6 +22,8 @@ li {
 #header ul {
   display: flex;
   align-items: center;
+  margin: 0 5px 0 15px;
+  padding-inline-start: 0;
 }
 #header li {
   padding: 5px;
@@ -43,6 +45,7 @@ li {
   width: 16px;
   height: 16px;
   vertical-align: bottom;
+  opacity: 0.6;
 }
 .btn-profile {
   width: 40px;
@@ -75,7 +78,142 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10%;
+}
+/*search*/
+#search {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.form-search {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  height: 44px;
+  padding: 0 8px 0 14px;
+  max-width: 584px;
+}
+.form-search:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+.input {
+  flex: 1;
+  align-items: center;
+}
+
+#input-search {
+  border: none;
+  font: 16px;
+  height: 34px;
+  outline: none;
+  display: flex;
+  flex: 1;
+}
+
+.main-left img {
+  width: 16px;
+  margin-right: 13px;
+  display: flex;
+  align-items: center;
+}
+.main-right {
+  display: flex;
+}
+.main-right img {
+  height: 20px;
+  margin: 0 8px;
+}
+.main-right + img {
+  opacity: 0.6;
+}
+#img-keyboard {
+  position: relative;
+  opacity: 0.5;
+}
+#img-keyboard:hover::after {
+  display: block;
+}
+#img-keyboard::after {
+  display: none;
+  content: "입력 도구";
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  padding: 5px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#img-mic {
+  position: relative;
+}
+#img-mic:hover::after {
+  display: block;
+}
+#img-mic::after {
+  display: none;
+  content: "음성 검색";
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  padding: 5px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+#img-lens {
+  position: relative;
+}
+#img-lens:hover::after {
+  display: block;
+}
+#img-lens::after {
+  display: none;
+  content: "이미지로 검색";
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  padding: 5px;
+  background: black;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  white-space: nowrap; /*글씨 한줄로 보이게, 이거 하고나서 치우져지니 left, transform까지해줌*/
+}
+
+.main-button {
+  padding-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+.main-button button {
+  color: #3c4043;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+}
+.main-button button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+  cursor: pointer;
 }
 /*footer*/
 footer {
@@ -93,6 +231,15 @@ footer {
   display: flex;
   padding: 0 20px;
 }
+@media screen and (max-width: 750px) {
+  /*줄였을때 반응형으로 바뀌는 부분*/
+  .footer2 {
+    flex-direction: column;
+  }
+  .footer2 > div {
+    text-align: center;
+  } /*원래 div를 바로 선택하면 안 되고, 태그 이름 붙여준다음에 그걸 골라줘야함.*/
+}
 .footer2 a {
   padding: 15px;
   display: inline-block;
@@ -109,5 +256,10 @@ footer {
 }
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 /**/
