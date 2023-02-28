@@ -231,6 +231,7 @@ footer {
   display: flex;
   padding: 0 20px;
 }
+
 @media screen and (max-width: 750px) {
   /*줄였을때 반응형으로 바뀌는 부분*/
   .footer2 {
@@ -238,8 +239,22 @@ footer {
   }
   .footer2 > div {
     text-align: center;
-  } /*원래 div를 바로 선택하면 안 되고, 태그 이름 붙여준다음에 그걸 골라줘야함.*/
+  }
+  /*수정전
+    .footer2 > div {
+    text-align: center;
+  }
+  했었는데, 원래 div를 바로 선택하면 안 되고,
+  태그 이름 붙여준다음에 그걸 골라줘야함.*/
 }
+@media screen and (min-width: 1200px) {
+  /*늘렸을때 반응형으로 바뀌는 부분*/
+  .footer2 {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
 .footer2 a {
   padding: 15px;
   display: inline-block;
