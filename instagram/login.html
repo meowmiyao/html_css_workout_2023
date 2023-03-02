@@ -16,49 +16,22 @@
   </head>
   <body>
     <main>
-      <article>
-        <div class="main-right">
+      <article id="main">
+        <div class="main">
           <div class="logo">
             <img src="/html_css_workout_2023/img/인스타그램_텍스트_로고.png" />
           </div>
-          <div class="main-form">
-            <form>
-              <h2>친구들의 사진과 동영상을 보려면 가입하세요.</h2>
-              <button class="facebook-login">
-                <img
-                  src="/html_css_workout_2023/img/facebooklogo.png"
-                />Facebook으로 로그인
-              </button>
-              <div class="main-div">
-                <div class="line"></div>
-                <div class="main-inner-word">또는</div>
-                <div class="line"></div>
-              </div>
-              <div class="main-inner">
-                <input
-                  label="휴대폰 번호 또는 이메일 주소"
-                  name="emailORphone"
-                  type="text"
-                  placeholder="휴대폰 번호 또는 이메일 주소"
-                />
-              </div>
-              <div class="main-inner">
-                <input
-                  label="성명"
-                  name="fullname"
-                  type="text"
-                  placeholder="성명"
-                />
-              </div>
-              <div class="main-inner">
+          <div class="form">
+            <form class="form-input">
+              <div class="inner">
                 <input
                   label="사용자 이름"
                   name="username"
                   type="text"
-                  placeholder="사용자 이름"
+                  placeholder="전화번호, 사용자 이름 또는 이메일"
                 />
               </div>
-              <div class="main-inner">
+              <div class="inner">
                 <input
                   label="비밀번호"
                   name="password"
@@ -66,35 +39,72 @@
                   placeholder="비밀번호"
                 />
               </div>
-              <div class="main-describe">
-                <p class="main-describe-word">
-                  저희 서비스를 이용하는 사람이 회원님의 연락처 정보를
-                  Instagram에 업로드했을 수도 있습니다.
-                  <a class="main-more" href="#">더 알아보기</a>
-                </p>
+              <div class="auto-login">
+                <input class="auto-login-check" type="checkbox" />
+                <label>로그인 정보 저장하기</label>
               </div>
-              <div class="main-join"><button type="submit">가입</button></div>
+              <div class="b-b-box"><button type="submit">로그인</button></div>
+              <div class="hr">
+                <div class="line"></div>
+                <div class="word">또는</div>
+                <div class="line"></div>
+              </div>
+              <button class="fb-login2">
+                <img
+                  class="fb-img"
+                  src="/html_css_workout_2023/img/facebooklogo(b).png"
+                />Facebook으로 로그인
+              </button>
+              <div class="find-pw">
+                <a class="button" href="#">비밀번호를 잊으셨나요</a>
+              </div>
             </form>
           </div>
-          <div class="main-login">
-            <p>
-              계정이 있으신가요?<a class="main-login-button" href="#">로그인</a>
-            </p>
-          </div>
-          <div>앱을 다운로드하세요.</div>
-          <div class="main-app-download">
-            <a href="#"
-              ><img
-                src="https://static.cdninstagram.com/rsrc.php/v3/ye/r/UtJtFmFLCiD.png"
-            /></a>
-            <a href="#"
-              ><img
-                src="https://static.cdninstagram.com/rsrc.php/v3/yw/r/LBxTdceDfgS.png"
-            /></a>
-          </div>
+        </div>
+        <div class="main-2">
+          <p>
+            계정이 없으신가요?
+            <a class="b-b-word" href="#">가입하기</a>
+          </p>
+        </div>
+
+        <div class="main-app">앱을 다운로드하세요.</div>
+        <div class="main-app-download">
+          <a href="#"
+            ><img
+              src="https://static.cdninstagram.com/rsrc.php/v3/ye/r/UtJtFmFLCiD.png"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://static.cdninstagram.com/rsrc.php/v3/yw/r/LBxTdceDfgS.png"
+          /></a>
         </div>
       </article>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+        <ul>
+          <li>Meta</li>
+          <li>소개</li>
+          <li>블로그</li>
+          <li>채용 정보</li>
+          <li>도움말</li>
+          <li>API</li>
+          <li>개인정보처리방침</li>
+          <li>약관</li>
+          <li>인기 계정</li>
+          <li>위치</li>
+          <li>Instagram Lite</li>
+          <li>연락처 업로드 & 비사용자</li>
+          <li>Meta Verified</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>한국어</li>
+          <li>ⓒ 2023 Instagram from Meta</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

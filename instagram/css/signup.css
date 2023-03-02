@@ -1,0 +1,73 @@
+/*main*/
+.main,
+.main-login {
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 1px;
+  box-sizing: border-box;
+  width: 348px;
+  margin: 0 0 10px;
+}
+
+.main {
+  padding: 40px;
+  padding-bottom: 20px;
+}
+
+.main-login {
+  padding: 10px 0;
+}
+
+.main .form .describe > h2 {
+  color: rgb(142, 142, 142);
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600px;
+}
+
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 175px;
+  height: 51px;
+}
+
+.logo img:hover {
+  cursor: pointer;
+}
+
+.main-describe a,
+p {
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 16px;
+  overflow-wrap: break-word;
+  text-align: center;
+  word-break: break;
+}
+.main-describe p {
+  color: rgb(142, 142, 142);
+}
+
+.main-more {
+  text-decoration-line: none;
+}
+
+.main-join,
+button {
+  background-color: rgb(0, 149, 246);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 4px 0;
+  width: 100%;
+}
+
+.main-join,
+button:hover {
+  cursor: pointer;
+}
