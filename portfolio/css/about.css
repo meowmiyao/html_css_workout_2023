@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap");
+@font-face {
+  font-family: "NanumSquareNeo-Variable";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+body {
+  margin: 0;
+}
+p {
+  font-family: "NanumSquareNeo-Variable";
+  font-size: 12px;
+  word-break: break;
+}
+
+header {
+  height: 80px;
+  background-color: #1b1b19;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+header .header-dot {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ecc643;
+}
+
+header .header-dot:hover {
+  background-color: #a53317;
+}
+
+header .menu ul {
+  list-style: none;
+  display: flex;
+}
+
+header .menu ul a {
+  padding: 20px;
+  text-decoration-line: none;
+  color: white;
+  font-size: 12px;
+}
+
+header .menu ul a:hover {
+  color: #74af7f;
+}
+
+/*main*/
+main {
+  display: flex;
+}
+
+.b-box {
+  background-color: #448fee;
+}
+.y-box {
+  background-color: #ecc643;
+}
+
+.aboutme {
+  padding: 30px;
+  font-size: 20px;
+}
+
+.resume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 30px;
+}
+
+.resume a {
+  text-decoration-line: none;
+  color: #1b1b19;
+}
+
+.resume img {
+  height: 30px;
+}
+
+.extra {
+  width: 200px;
+  height: 200px;
+  color: purple;
+}
