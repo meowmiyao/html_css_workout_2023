@@ -10,10 +10,12 @@
   box-sizing: border-box;
   font-family: "Playfair Display", serif;
 }
+
 body {
   margin: 0;
 }
-p {
+p,
+.flower-text {
   font-family: "NanumSquareNeo-Variable";
   font-size: 12px;
   word-break: break;
@@ -37,7 +39,7 @@ header .header-dot {
 }
 
 header .header-dot:hover {
-  background-color: #a53317;
+  background-color: #a51717;
 }
 
 header .menu ul {
@@ -57,28 +59,77 @@ header .menu ul a:hover {
 }
 
 /*main*/
+
+@media screen and (max-width: 965px) {
+  #content {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.describe {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 main {
   display: flex;
+  /* height: calc(100vh - 80px); */
+  flex: 1;
 }
 
 .b-box {
   background-color: #448fee;
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
 .y-box {
   background-color: #ecc643;
+  flex: 1;
+  max-height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.self img {
+  height: 100%;
+  vertical-align: bottom;
+  /* 위에 두개가 밑에 자꾸 생겼던 빈공간(background)+스크롤 안 생기게 맞춰주는 것 */
+  /*참고사이트*/
+  object-fit: cover;
+  object-position: 77% 54%;
+  width: 100%;
 }
 
 .aboutme {
-  padding: 30px;
-  font-size: 20px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutme h1 {
+  font-size: 70px;
+  margin: 0 0 20px;
+  line-height: 80px;
+}
+
+.aboutme p {
+  margin: 5px;
 }
 
 .resume {
+  flex: 1; /*이거 안쓰면 space-between이 안먹힘*/
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  padding: 30px;
+  padding: 0px 30px;
 }
 
 .resume a {
@@ -91,7 +142,68 @@ main {
 }
 
 .extra {
-  width: 200px;
-  height: 200px;
-  color: purple;
+  display: inline-block;
 }
+.extra img {
+  width: 100px;
+  height: 100px;
+}
+
+.flower {
+  display: inline-flex;
+  align-items: center;
+}
+.flower:hover .flower-text {
+  display: block;
+}
+
+.flower-text {
+  padding: 15px;
+  margin-left: 20px;
+  background-color: #a51717;
+  border-radius: 30px;
+  display: none;
+  position: relative;
+  color: white;
+}
+.flower-text::before {
+  border-top: 0px solid;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 15px solid #a51717;
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  transform: translateY(-50%);
+  left: -8px;
+}
+.flower-text::after {
+  border-top: 15px solid #a51717;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid;
+  content: "";
+  position: absolute;
+  top: calc(50% + 7px);
+  transform: translateY(-50%);
+  left: -8px;
+}
+/* 
+.balloon {
+  position: relative;
+  margin: 50px;
+  width: 400px;
+  height: 100px;
+  background: #333333;
+  border-radius: 10px;
+}
+.balloon::after {
+  border-top: 15px solid;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -15px;
+} */
